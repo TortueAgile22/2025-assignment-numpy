@@ -44,7 +44,6 @@ def max_index(X):
 
     if not isinstance(X, np.darray) or X.ndim != 2:
         raise ValueError("Input is not a 2D numpy array")
-    
     n_samples = X.shape[0]
 
     M = [np.max(X[k]) for k in range(n_samples)]
